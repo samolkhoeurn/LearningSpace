@@ -64,7 +64,7 @@ def getSecretNum():
     secretNum = ''
     for i in range(NUM_DIGITS):
         secretNum += str(numbers[i])
-    print('secretNum is:{}'.format(secretNum))
+    #print('secretNum is:{}'.format(secretNum))
     return secretNum
 
 def getClues(guess, secretNum):
@@ -82,6 +82,7 @@ def getClues(guess, secretNum):
         elif guess[i] in secretNum[i]:
             # A correct digit is in the incorrect place. 
             clues.append('Pico')
+    print(clues)
     if len(clues) == 0:
         return 'Bagels' # there are no correct digits at all.
     else:
