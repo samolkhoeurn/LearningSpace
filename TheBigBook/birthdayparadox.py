@@ -76,7 +76,7 @@ print()
 
 # Determine if there are two birthdays that match. 
 match = getMatch(birthdays)
-print('match:{}'.format(match))
+#print('match:{}'.format(match))
 # Display the results:
 print('In this simulation, ', end='')
 if match != None:
@@ -91,7 +91,7 @@ print()
 print('Generating', numBDays, 'random birthdays 100,000 times...')
 input('Press Enter to begin...')
 
-print('Let\'s run another 100,1000 simulations.')
+print('Let\'s run another 100,000 simulations.')
 simMatch = 0 # How many simulations had matching birthdays in them. 
 
 for i in range(100_000):
