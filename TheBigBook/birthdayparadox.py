@@ -51,7 +51,7 @@ MONTHS = ('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 
 while True: # Keep asking until the user enters a valid amount.
     print('How many birthdays shall I generate? (Max 100)')
     response = input('> ')
-    if response.isdecimal() and (0 < int(response) <= 100):
+    if response.isdecimal() and (0 < int(response) <= 500):
         numBDays = int(response)
         break # User has entered a valid amount.
 
@@ -96,7 +96,7 @@ simMatch = 0 # How many simulations had matching birthdays in them.
 
 for i in range(100_000):
     # Report on the progress every 10,000 simulations:
-    if i % 10_000 == 0:
+    if i % 1_000 == 0:
         print(i, 'simulations run...')
     birthdays = getBirthdays(numBDays)
     if getMatch(birthdays) != None:
