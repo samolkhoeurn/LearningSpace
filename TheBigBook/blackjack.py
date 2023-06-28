@@ -195,7 +195,7 @@ def displayCards(cards):
             # Print a card's back:
             rows[1] += '|## | '
             rows[2] += '|###| '
-            rows[3] += '__##| '
+            rows[3] += '|_##| '
     else:
         # Print the card's front:
         rank, suit = card # The card is a tuple data structure. 
